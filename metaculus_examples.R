@@ -4,7 +4,7 @@ library( tidyverse)
 source( "metaculus.R")
 
 ## 
-## Examples using CDPH Metaculus helper functions -----
+## Examples using Metaculus helper functions -----
 ##
 
 metaculus_reset_session()
@@ -110,7 +110,7 @@ ggplot( metaculus_pred, aes( x=x, y=cdf, col = prediction_type)) +
 
 ## In[1]
 api_url <- "https://www.metaculus.com/api2"
-username <- "stp" # or whatever your username is
+username <- "superforecaster99" # or whatever your username is
 password <- rstudioapi::askForPassword( "Enter your password: ")
 # you can also just type your password into the buffer, but probably you
 # don't want to commit that to code
